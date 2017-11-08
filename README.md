@@ -10,3 +10,11 @@ var myApp = new connectivityIndicator({
  autoRetryMultiple: 5 //Start count from 5 
 });
 ```
+<br>
+<br>
+
+![ScreenShot](https://github.com/yunusbayraktaroglu/connectivityindicator/blob/master/img/1.png)
+<br>
+![ScreenShot](https://github.com/yunusbayraktaroglu/connectivityindicator/blob/master/img/2.png)
+<br>
+![ScreenShot](https://github.com/yunusbayraktaroglu/connectivityindicator/blob/master/img/3.png)
