@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Connectivity Indicator</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div id="connectivity_indicator">
+        <p id="notice"></p>
+        <p id="count_down"></p>
+        <button id="retry_button" onclick="myApp.reConnect(this)"></button>
+        <button id="cancel_button" onclick="myApp.stopConnect()">Cancel</button>
+    </div>
+    <script src="connectivity-indicator.js"></script>
+    <script type="text/javascript">
+        var myApp = new connectivityIndicator({
+            containerID: "connectivity_indicator",
+            url: "http://www.yunusbayraktaroglu.com/z.ico",
+            checkTimer: 1000, //Check connectivity after X milisecond if online
+            maxRetryCountDown: 1000, //If counter reach this, stop auto retry process
+            autoRetryMultiple: 5 //Start count from X
+        });
+    </script>
+</body>
+</html>
